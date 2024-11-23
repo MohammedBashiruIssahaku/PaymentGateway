@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: payment gateway integration
+
+server:
+  port: 8282
+
+my:
+  mtn-momo:
+    userId : 0716eb7a-32f4-45d6-aa4d-6a6e33069095
+    subscription_Key: e11de814c3bc4b9f9e8beab61f8a7ca0
+    targetEnvironment: sandbox
