@@ -1,29 +1,29 @@
 {
   "groups": [
     {
-      "name": "my.mtn-momo",
+      "name": "Client.momo",
       "type": "Bashiru.com.PaymentGateway.Props.ClientProps",
       "sourceType": "Bashiru.com.PaymentGateway.Props.ClientProps"
     }
   ],
   "properties": [
     {
-      "name": "my.mtn-momo.api-key",
+      "name": "Client.momo.api-key",
       "type": "java.lang.String",
       "sourceType": "Bashiru.com.PaymentGateway.Props.ClientProps"
     },
     {
-      "name": "my.mtn-momo.api-user-id",
+      "name": "Client.momo.api-user-id",
       "type": "java.lang.String",
       "sourceType": "Bashiru.com.PaymentGateway.Props.ClientProps"
     },
     {
-      "name": "my.mtn-momo.ocp-apim-subscription-key",
+      "name": "Client.momo.ocp-apim-subscription-key",
       "type": "java.lang.String",
       "sourceType": "Bashiru.com.PaymentGateway.Props.ClientProps"
     },
     {
-      "name": "my.mtn-momo.target-environment",
+      "name": "Client.momo.target-environment",
       "type": "java.lang.String",
       "sourceType": "Bashiru.com.PaymentGateway.Props.ClientProps"
     }

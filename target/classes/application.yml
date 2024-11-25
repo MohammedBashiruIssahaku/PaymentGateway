@@ -1,10 +1,18 @@
+Bashiru.com.PaymentGateway:
+
 server:
   port : 8484
 
-my:
-  mtn-momo:
-    targetEnvironment: sandbox
-    ocpApimSubscriptionKey: e11de814c3bc4b9f9e8beab61f8a7ca0
-    apiKey : 8f0ae0c9c4e94a8c935c872386786753
-    apiUserId : 0716eb7a-32f4-45d6-aa4d-6a6e33069095
+Spring:
+  application:
+    name: mtn-momo
+
+Client:
+  momo:
+    target-environment: sandbox
+    ocp-apim-subscription-key: 60d019174b8b449eb70cea8e24e3a5e6
+    api-key: e43f5a49a5b34432b4089409b50f5982
+    api-user-id: ffbd2ceb-06e4-46d6-bf80-bd09ec026d9a
+
+
 

@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 @FeignClient(
         name = "CreateAccessToken",
-        url = "https://sandbox.momodeveloper.mtn.com/remittance/v1_0"
+        url = "https://sandbox.momodeveloper.mtn.com/remittance"
 )
 public interface MomoAuthClient
 {
     @PostMapping("/token/")
-    accessTokenDto getToken(@RequestHeader("Authorization") String authorization, @RequestHeader("Ocp-Apim-Subscription-Key") String ocpApimSubscriptionKey);
+    accessTokenDto getAccessToken(@RequestHeader("Authorization") String authorization, @RequestHeader("Ocp-Apim-Subscription-Key") String ocpApimSubscriptionKey);
 
 }

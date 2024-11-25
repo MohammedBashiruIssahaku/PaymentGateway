@@ -4,10 +4,13 @@ import Bashiru.com.PaymentGateway.Client.MomoAuthClient;
 import Bashiru.com.PaymentGateway.Dto.accessTokenDto;
 import Bashiru.com.PaymentGateway.Props.ClientProps;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
 import java.util.Base64;
 @Slf4j
+@Service
 public class CreateAccessToken
 {
     MomoAuthClient authClient;
@@ -15,13 +18,13 @@ public class CreateAccessToken
     accessTokenDto access;
 
 
-    public String getToken()
+    public String getAccessToken()
    {
-         String header = Base64.getEncoder().encodeToString(String.format ("%s , %s","0716eb7a-32f4-45d6-aa4d-6a6e33069095", "8f0ae0c9c4e94a8c935c872386786753").getBytes());
+         String header = Base64.getEncoder().encodeToString(String.format ("%s:%s", props.getApiUserId(), props.getApiKey()).getBytes());
 
-         var authorization = authClient.getToken("Basic "+header,  props.getOcpApimSubscriptionKey());
-         log.info("access token: "+ authorization);
-         return authorization.token();
+         var authorization = authClient.getAccessToken("Basic "+header,  props.getOcpApimSubscriptionKey());
+         log.info("access token: {}", authorization.accessToken());
+         return authorization.accessToken();
 
    }
 
