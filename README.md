@@ -14,8 +14,5 @@ Integration: External APIs for payment processing and currency conversion
 How to Use
 Currently under development and not yet deployable. Contributions are welcome to help finalize the project.
 
-Contribution Guidelines
-We welcome feature ideas, bug fixes, and code reviews! Submit pull requests or open issues to help improve the project.
-
 License
 This project is licensed under the MIT License.
