@@ -12,7 +12,7 @@ Backend: Java, Spring Boot, Spring Cloud (OpenFeign)
 Security: Tokenization
 Integration: External APIs for payment processing and currency conversion
 How to Use
-Currently under development and not yet deployable. Contributions are welcome to help finalize the project.
+Currently under development and not yet deployable. 
 
 License
 This project is licensed under the MIT License.
