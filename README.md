@@ -1,7 +1,7 @@
 # PaymentGateway
 
 Payment Gateway Application
-A secure and efficient payment gateway application built with Java, Spring Boot, and Spring Cloud (OpenFeign). Designed to handle secure transactions and integrate with MTN payment services, this project aims to simplify payment processing and currency conversions for developers.
+A secure and efficient payment gateway application built with Java, Spring Boot, and Spring Cloud (OpenFeign). Designed to handle secure transactions and integrate with MTN payment services, this project aims to simplify payment processing and currency conversions.
 
 Key Features
 Secure Transactions: Implements tokenization for robust transaction security.
