@@ -12,9 +12,9 @@ public class MomoClientConfig
     RequestInterceptor requestInterceptor()
     {
         return requestTemplate -> requestTemplate
-                .header("Authorization" + "Bearer "+ accessToken )
-                .header("X-Target-Environment" + props.getTargetEnvironment() )
-                .header("Ocp-Apim-Subscription-Key" + props.getSubscription_Key());
+                .header("Authorization" + "Bearer "+ accessToken.getToken())
+                .header("X-Target-Environment" , props.getTargetEnvironment() )
+                .header("Ocp-Apim-Subscription-Key" , props.getOcpApimSubscriptionKey());
 
     }
 

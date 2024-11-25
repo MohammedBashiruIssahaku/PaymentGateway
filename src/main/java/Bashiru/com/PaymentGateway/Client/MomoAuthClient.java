@@ -1,17 +1,17 @@
 package Bashiru.com.PaymentGateway.Client;
 
-import Bashiru.com.PaymentGateway.Dto.AccessTokenDto;
+import Bashiru.com.PaymentGateway.Dto.accessTokenDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 
 @FeignClient(
         name = "CreateAccessToken",
-        url = "https://sandbox.momodeveloper.mtn.com/remittance"
+        url = "https://sandbox.momodeveloper.mtn.com/remittance/v1_0"
 )
 public interface MomoAuthClient
 {
     @PostMapping("/token/")
-     AccessTokenDto getToken(@RequestHeader("Authorization") String authorization, @RequestHeader("Ocp-Apim-Subscription-Key") String subscriptionkey);
+    accessTokenDto getToken(@RequestHeader("Authorization") String authorization, @RequestHeader("Ocp-Apim-Subscription-Key") String ocpApimSubscriptionKey);
 
 }

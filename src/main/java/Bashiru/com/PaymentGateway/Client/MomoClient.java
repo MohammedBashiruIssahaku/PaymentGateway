@@ -5,14 +5,17 @@ import Bashiru.com.PaymentGateway.Dto.GetAccountBalanceDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(
-        name = "Remittance",
-        url = "https://sandbox.momodeveloper.mtn.com/remittance",
+
+@FeignClient
+        (
+        name = "momo-api",
+        url = "https://sandbox.momodeveloper.mtn.com/remittance/v1_0/",
         configuration = MomoClientConfig.class
-)
+        )
 public interface MomoClient
 {
-    @GetMapping("/v1_0/account/balance")
+    @GetMapping("account/balance")
+   // GetAccountBalanceDto accountBalance();
     GetAccountBalanceDto accountBalance();
 
 }
